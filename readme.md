@@ -1,6 +1,6 @@
 # The ANSI Terminal Markup Language (AnTeML)
 
-**AnTeML** (pronounced /ˈænˌtiː ˈɛm ˈɛl/, like "anti-ML") is a stack-based SGML-based mini-language for encoding text with ANSI X3.64 Control Sequences.
+**AnTeML** (pronounced /ˈænˌtiː ˈɛm ˈɛl/, like "anti-ML") is a stack-based HTML-like mini-language for encoding text with ANSI X3.64 Control Sequences.
 
 ## Why AnTeML?
 The primary purpose of AnTeML is to provide a more intuitive and easy to use interface to ANSI terminal controls for developers of command-line interfaces (CLIs).
@@ -99,6 +99,7 @@ sys.exit(0)
 ```
 
 **Output example:**
+<!--
 <style>
 .blink {
   animation: blinker 2s linear infinite;
@@ -121,6 +122,8 @@ Please try again:
 <b style="color:white">Welcome, <span style="color:black;background:white" class="blink">Florian</span>!</b>
 <b style="color:lightgreen">Be greeted!</b>
 </pre>
+-->
+![greeter_anteml.py output sample](./demo/greeter_anteml.png "Example output")
 
 Actually, the AnTeML example here is slightly more sophisticated, using full-color grey-tones, display inversion and blinking, but the colorama output is very close. You can find both of these scripts in the `demo` folder, why not give them a try?
 
