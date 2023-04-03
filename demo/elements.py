@@ -1,6 +1,6 @@
 """ANSI Terminal Markup Language (AnTeML)."""
 import logging
-from ..anteml.parser import AntemlParser
+from anteml.parser import AntemlParser
 
 logger = logging.getLogger(__name__)
 

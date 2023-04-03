@@ -23,5 +23,6 @@ entities: dict[str, tuple[str, str]] = {
 
     "amp":  ("&", "Ampersand"),
     "lt":   ("<", "Less than"),
-    "gt":   (">", "Greater than")
+    "gt":   (">", "Greater than"),
+    "nbsp": (" ", "Non-breaking space"),
 }

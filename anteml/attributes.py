@@ -31,7 +31,7 @@ class Color:
     }
 
     decimal_pattern: ClassVar[Pattern[str]] = re.compile(
-        r"\AD(?:(?:0?\d{1,2})|(?:[0-2][0-5][0-5]))\Z",
+        r"\AD(?:\d{1,2}|(?:[01]?\d{2})|(?:2[0-4]\d)|(?:25[0-5]))\Z",
         re.IGNORECASE
     )
 
