@@ -2,6 +2,10 @@
 
 **AnTeML** (pronounced /ˈænˌtiː ˈɛm ˌɛl/, like "anti-ML") is a stack-based HTML-like mini-language for encoding text with ANSI X3.64 Control Sequences.
 
+## **Note:**
+
+AnTeML is currently just a toy package/idea I'm playing around with, and not really suitable for any serious use. Maybe, with a bit of work and a nicer interface layered on top of it, this could be something more, but I'm spending very little time on it and that only *very* occassionally. Contributions and ideas are of course welcome, even so.
+
 ## Why AnTeML?
 The primary purpose of AnTeML is to provide a more intuitive and easy to use interface to ANSI terminal controls for developers of command-line interfaces (CLIs).
 
@@ -162,6 +166,7 @@ AnTeML is licensed under the [GNU Lesser General Public License, version 3.0](ht
 
 If you're interested in doing the sort of things that AnTeML helps with, you may also want to look at the following packages (it might well be that one of these provides a better fit for your requirements):
 
+* [rich](https://pypi.org/project/rich/) - The package you probably want to use to make nice text user interfaces...
 * [colorama](https://pypi.org/project/colorama/) - Provides a cross-platform abstract interface for ANSI escape sequences. Less powerful but more cross-platform compatible and tested than AnTeML.
 * [curses](https://docs.python.org/3/library/curses.html) - Python wrapper for the *curses* C-library with an *ncurses*-based API. Much more powerful and flexible and well-supported as part of the Python standard library. However, depends on the *curses* C-library, which may not be available or installed on all systems even if they support it. If you want to develop GUI-like CLI interfaces, you will probably want to use *curses*, or maybe *blessings* (see below).
 * [blessings](https://pypi.org/project/blessings/) - Provides a more accessible and usable layer over `curses`. More powerful than AnTeML.
